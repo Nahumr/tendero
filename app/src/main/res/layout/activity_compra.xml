@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TXCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPRA \nPROMOCIONES"
+        android:gravity="center"
+        android:textSize="50sp"/>
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/TXCompra"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ListView
+            android:id="@+id/lvItems"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></ListView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="ORDENAR"
+            android:textColor="#000"
+            android:textSize="60px"
+            android:background="@drawable/btn_group"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ButtonBuscarC"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_group"
+        android:text="Buscar"
+        android:textColor="#DDD"
+        android:textSize="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        ></Button>
+
+</RelativeLayout>

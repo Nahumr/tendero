@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    tools:context=".compra">
+
+    <TextView
+        android:id="@+id/TXVenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VENTA"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="50dp"/>
+
+    <ImageView
+        android:id="@+id/TXTOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/TXVenta"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TXTOrden"
+        android:layout_alignBottom="@+id/TXTOrden"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="99dp"
+
+        android:text="NUMERO DE ORDEN" />
+
+
+    <EditText
+        android:id="@+id/NumeroOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_group"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TXVenta"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/TXTOrden"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ListView
+            android:id="@+id/lvItems2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            ></ListView>
+
+
+        <Button
+            android:id="@+id/ButtonCobrar"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_group"
+            android:text="COBRAR"
+            android:textColor="#000"
+            android:textSize="60px"></Button>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ButtonBuscar"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_group"
+        android:text="Buscar"
+        android:textColor="#DDD"
+        android:textSize="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        ></Button>
+
+
+
+</RelativeLayout>

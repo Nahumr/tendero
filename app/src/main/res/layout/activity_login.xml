@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tiendita">
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="28%"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/form"
+        android:hint="ID TIENDA"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="60px"></EditText>
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="42%"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/form"
+        android:hint="USUARIO"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="60px"></EditText>
+
+    <Button
+        android:id="@+id/ButtonEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="60%"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/form_entrar"
+        android:text="ENTRAR"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="60px"></Button>
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

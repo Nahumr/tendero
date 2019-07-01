@@ -1,0 +1,4 @@
+#Wed May 08 16:02:44 CDT 2019
+base.0=C\:\\Users\\Zahid Eduardo\\AndroidStudioProjects\\AppTendero\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
